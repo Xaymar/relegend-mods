@@ -5,19 +5,19 @@ using HarmonyLib;
 namespace TutorialSkipper
 {
     [BepInPlugin(ModGUID, ModName, ModVersion)]
-    public class TutorialSkipper : BaseUnityPlugin
+    public class Mod : BaseUnityPlugin
     {
         public const string ModGUID = "com.xaymar.tutorialskipper";
         public const string ModName = "Tutorial Skippper";
         public const string ModVersion = "1.0.0";
 
-        public static TutorialSkipper instance = null;
+        public static Mod instance = null;
 
         public Harmony harmony = null;
 
-        public TutorialSkipper()
+        public Mod()
         {
-            TutorialSkipper.instance = this;
+            Mod.instance = this;
             harmony = new Harmony(ModGUID);
             harmony.PatchAll();
         }

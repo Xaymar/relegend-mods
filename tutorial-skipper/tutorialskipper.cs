@@ -8,7 +8,7 @@ namespace TutorialSkipper
     {
         static bool Prefix(string _title)
         {
-            TutorialSkipper.instance.GetLogger().LogInfo(string.Format("Skipped Tutorial '{0}'.", _title));
+            Mod.instance.GetLogger().LogInfo(string.Format("Skipped Tutorial '{0}'.", _title));
             TutorialManager.instance.SearchTutorial(_title);
             TutorialManager.instance.unlockTutorials.Add(new UnlockInfo(_title, true));
             TutorialManager.instance.EndTutorial();
