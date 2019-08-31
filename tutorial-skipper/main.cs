@@ -8,7 +8,7 @@ namespace TutorialSkipper
     public class Mod : BaseUnityPlugin
     {
         public const string ModGUID = "com.xaymar.tutorialskipper";
-        public const string ModName = "Tutorial Skippper";
+        public const string ModName = "Tutorial Skipper";
         public const string ModVersion = "1.0.0";
 
         public static Mod instance = null;
