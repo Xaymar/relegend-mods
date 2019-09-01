@@ -13,4 +13,5 @@ set(RELEGEND_PATH "C:/Program Files (x86)/Steam/steamapps/common/Re-Legend" CACH
 set(BEPINEX_PATH "${CMAKE_CURRENT_SOURCE_DIR}/thirdparty/bepinex")
 
 add_subdirectory(attack-and-move)
+add_subdirectory(no-crafting-failure)
 add_subdirectory(tutorial-skipper)
